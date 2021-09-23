@@ -234,12 +234,14 @@ function waitForWSEndpoint(
     }
 
     function onTimeout(): void {
+      /*
       cleanup();
       reject(
         new TimeoutError(
           `Timed out after ${timeout} ms while trying to connect to the browser! Only Chrome at revision r${preferredRevision} is guaranteed to work.`
         )
       );
+      */
     }
 
     function onLine(line: string): void {
